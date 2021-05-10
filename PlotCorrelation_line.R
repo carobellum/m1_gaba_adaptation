@@ -22,7 +22,7 @@
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # --------------------------------------------------------------------
-PlotCorrelation_line_if_significant <- function(data, results, X, Y) {
+PlotCorrelation_line <- function(data, results, X, Y) {
   source("/Users/CN/Documents/repos/my_scripts/r/flattenCorrMatrix.R")
   library(ggthemes)
   flat <- flattenCorrMatrix(results$r, results$P)

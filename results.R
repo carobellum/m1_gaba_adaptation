@@ -29,7 +29,7 @@ setwd(dir)
 
 
 # Import general functions
-source("./PlotCorrelation_line_if_significant.R")
+source("./PlotCorrelation_line.R")
 source("./Test_difference_spearman.R")
 
 # Import data
@@ -45,7 +45,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = data_rotation$M1_Cerebell
 X <- "ConnectivityChange"
 Y <- "Retention"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # ---------------------- Control Correlation : M1_Cerebellar_ConnectivityChange - Adaptation --------------------------
@@ -55,7 +55,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = data_rotation$M1_Cerebell
 X <- "ConnectivityChange"
 Y <- "Adaptation"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # Fisher Difference: 
@@ -71,7 +71,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = data_rotation$M1_LeftCere
 X <- "ConnectivityChange"
 Y <- "Retention"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 # Fisher Difference: 
 data_to_correlate_1 <- data.frame(data_rotation$M1_Cerebellar_ConnectivityChange,data_rotation$Retention)
@@ -87,7 +87,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = data_control$M1_Cerebella
 X <- "ConnectivityChange"
 Y <- "Retention"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # Fisher Difference: 
@@ -104,7 +104,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = data_rotation$M1_Cerebell
 X <- "ConnectivityChange"
 Y <- "GABA"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # control for GM
@@ -117,7 +117,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = as.vector(residuals.lm(mo
 X <- "ConnectivityChange"
 Y <- "GABA"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # Stats: GABA - Connectivity Change
@@ -140,7 +140,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = as.vector(residuals.lm(mo
 X <- "ConnectivityChange"
 Y <- "GABA"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 # Fisher Difference:
 results1 <- rcorr(as.matrix(data_to_correlate), type = "spearman")
@@ -168,7 +168,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = as.vector(residuals.lm(mo
 X <- "ConnectivityChange"
 Y <- "Glu"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 data_to_correlate <- data.frame("ConnectivityChange" = data_rotation$M1_Cerebellar_ConnectivityChange,
                    "Glu" = data_rotation$Glu
@@ -176,7 +176,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = data_rotation$M1_Cerebell
 X <- "ConnectivityChange"
 Y <- "Glu"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # Fisher Difference:
@@ -203,7 +203,7 @@ data_to_correlate <- data.frame("ConnectivityChange" = as.vector(residuals.lm(mo
 X <- "ConnectivityChange"
 Y <- "GABA"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 pcor.test(data_control[complete.cases(data_control$GABA),]$Retention,data_control[complete.cases(data_control$GABA),]$GABA,data_control[complete.cases(data_control$GABA),]$GM, corrmethod)
@@ -231,7 +231,7 @@ X <- "GABA"
 Y <- "Retention"
 
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # ______________________ Controlling for GM __________________________
@@ -246,7 +246,7 @@ X <- "GABA"
 Y <- "Retention"
 
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 resultpartial.GABA.Retention.GM <- pcor.test(data_rotation$Retention,
@@ -264,7 +264,7 @@ data_to_correlate <- data.frame("Retention" = as.vector(residuals.lm(model1)),
 X <- "Retention"
 Y <- "Glu"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 pcor.test(data_rotation$Retention,data_rotation$Glu,data_rotation$GM, corrmethod)
@@ -300,7 +300,7 @@ data_to_correlate <- data.frame("GABA" = data_rotation$GABA,
 X <- "GABA"
 Y <- "Adaptation"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # control for GM
@@ -313,7 +313,7 @@ X <- "GABA"
 Y <- "Adaptation"
 
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 
@@ -342,7 +342,7 @@ data_to_correlate <- data.frame("Retention" = as.vector(residuals.lm(model1)),
 X <- "Retention"
 Y <- "GABA"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # Fisher Difference:
@@ -368,7 +368,7 @@ data_to_correlate <- data.frame("NetworkChange" = data_rotation$Cerebellar_Netwo
 X <- "NetworkChange"
 Y <- "Adaptation"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 
@@ -380,7 +380,7 @@ data_to_correlate <- data.frame("NetworkChange_DMN" = data_rotation$DMN_Change,
 X <- "NetworkChange_DMN"
 Y <- "Adaptation"
 xyresults <- rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 
 
 # Fisher Difference: 
@@ -398,7 +398,7 @@ data_to_correlate = data.frame("Cerebellar_Network_Change" = data_rotation$Cereb
 X = "Cerebellar_Network_Change"
 Y = "Retention"
 xyresults = rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 # 
 
 # Fisher Difference: 
@@ -415,7 +415,7 @@ data_to_correlate = data.frame("Cerebellar_Network_Change" = data_control$Cerebe
 X = "Cerebellar_Network_Change"
 Y = "Adaptation"
 xyresults = rcorr(as.matrix(data_to_correlate), type = corrmethod)
-PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
+PlotCorrelation_line(data_to_correlate, xyresults,X,Y)
 # 
 
 # Fisher Difference: 
