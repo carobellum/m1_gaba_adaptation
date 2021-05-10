@@ -392,10 +392,10 @@ Test_difference_spearman(results1, results2)
 
 
 # ---------------------- Control Correlation : Cerebellar Network Strength Change - Retention --------------------------
-data_to_correlate = data.frame("ConnectivityChange_WholeNetwork" = data_rotation$Cerebellar_Network_Change,
+data_to_correlate = data.frame("Cerebellar_Network_Change" = data_rotation$Cerebellar_Network_Change,
                   "Retention" = data_rotation$Retention
 )
-X = "ConnectivityChange_WholeNetwork"
+X = "Cerebellar_Network_Change"
 Y = "Retention"
 xyresults = rcorr(as.matrix(data_to_correlate), type = corrmethod)
 PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
@@ -409,10 +409,10 @@ results2 <- rcorr(as.matrix(data_to_correlate), type = "spearman")
 Test_difference_spearman(results1, results2)
 
 # ---------------------- Control Correlation : Cerebellar Network Strength Change - Adaptation (Control Condition) --------------------------
-data_to_correlate = data.frame("ConnectivityChange_WholeNetwork" = data_control$Cerebellar_Network_Change,
+data_to_correlate = data.frame("Cerebellar_Network_Change" = data_control$Cerebellar_Network_Change,
                   "Adaptation" = data_control$Adaptation
 )
-X = "ConnectivityChange_WholeNetwork"
+X = "Cerebellar_Network_Change"
 Y = "Adaptation"
 xyresults = rcorr(as.matrix(data_to_correlate), type = corrmethod)
 PlotCorrelation_line_if_significant(data_to_correlate, xyresults,X,Y)
