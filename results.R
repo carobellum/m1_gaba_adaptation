@@ -24,7 +24,7 @@ library(tidyverse)
 
 
 # Set working directory (change dir path to cloned github repository)
-dir = "/Users/CN/Documents/Projects/Joystick_M1_MRS/Analysis/m1_manuscript_code/for_github/upload"
+dir = "/Users/CN/Documents/Projects/Joystick_M1_MRS/Analysis/m1_gaba_adaptation"
 setwd(dir)
 
 
