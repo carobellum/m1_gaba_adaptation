@@ -1,4 +1,4 @@
-"Subject","Condition","Adaptation","Retention","GABA","Glu","GM","M1_Cerebellar_ConnectivityChange","M1_LeftCerebellar_ConnectivityChange","Cerebellar_Network_Change","DMN_Change"
+"Subject","Condition","Adaptation","Retention","GABA","Glu","GM","M1_Cerebellar_ConnChange","M1_LeftCerebellar_ConnChange","Cerebellar_Network_Change","DMN_Change"
 "1","Rotation",3.6301721203725,-19.0011783531526,0.4615,1.36875,0.317527,-3.8138331254119,-2.47697442317463,5.682856258,-20.66643452
 "2","Rotation",10.6444054380389,-21.36479213856,0.293,0.99075,0.362302,-1.62206413205117,-1.06293558544927,-1.98603249,-0.537690220000002
 "3","Rotation",10.021657217822,-17.2892257707145,0.43275,0.94875,0.249492,-5.30488974098637,-4.33835266887538,13.13304604,10.56170091

@@ -1,4 +1,4 @@
-"Subject","Condition","Adaptation","Retention","GABA","Glu","GM","M1_Cerebellar_ConnectivityChange","Cerebellar_Network_Change","DMN_Change"
+"Subject","Condition","Adaptation","Retention","GABA","Glu","GM","M1_Cerebellar_ConnChange","Cerebellar_Network_Change","DMN_Change"
 "1","Control",-2.24190932068164,12.785321919883,0.2465,0.953875,0.305151,0.16154071906078,6.727669588,0.818237589999999
 "2","Control",0.997093739964143,-1.02002434636622,0.253875,1.2875,0.263379,2.69973568883098,-2.30308949,0.572362030000001
 "3","Control",-0.689428128916035,9.10824839432858,0.24,0.984375,0.29399,-8.92455964587443,22.00888263,-3.91427808
