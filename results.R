@@ -430,7 +430,10 @@ Test_difference_spearman(results1, results2)
 
 
 
-# ---------------------- Write main variables to matlab file to examine with robust correlation toolbox --------------------------
-library("R.matlab")
-writeMat(paste(dir, "data_rotation.mat", sep = "/"), data=data_rotation, fixNames=TRUE, verbose=TRUE)
-
+# -------- Write main variables to matlab file to examine with robust correlation toolbox --------------------------
+# library("R.matlab")
+# writeMat(paste(dir, "data_rotation.mat", sep = "/"), data=data_rotation, fixNames=TRUE, verbose=TRUE)
+# -------- Write main variables to txt file for Mediation Analysis with SPSS PROCESS --------------------------
+# MediationData <- subset(data_rotation, select=c("Subject", "M1_Cerebellar_ConnChange", "GABA", "Retention"))
+# names(data) <-  c("Subject", "Connect", "GABA", "Retent") # rename because SPSS cannot handle long variable names
+# write.table(MediationData, paste(dir, "data_rotation.txt", sep = "/"), sep="\t", row.names=FALSE)
