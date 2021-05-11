@@ -7,7 +7,7 @@ Caroline Nettekoven, 2021, ✉️ nettekoven-enquiries@web.de
 ## Requirements ⚙️
 * R packages ppcor, Hmisc, tidyr, dplyr, irr, foreign, tidyverse available on the [Comprehensive R Archive Network](https://cran.r-project.org) 
   (analysis presented in [Figure 2](https://www.biorxiv.org/content/10.1101/2020.12.22.423981v2.full) and [Figure 3](https://www.biorxiv.org/content/10.1101/2020.12.22.423981v2.full))
-* Re-calculating main relationships with robust correlations requires Matlab and the [Robust Correlation Toolbox](https://sourceforge.net/projects/robustcorrtool/files/) [[1]](#1) 
+* Re-calculating relationships with robust correlations requires Matlab and the [Robust Correlation Toolbox](https://sourceforge.net/projects/robustcorrtool/files/) [[1]](#1) 
   (analysis presented in [Figure 3](https://www.biorxiv.org/content/10.1101/2020.12.22.423981v2.full))
 * Mediation Analysis requires SPSS version 27.0 and the SPSS modelling tool [PROCESS](https://www.processmacro.org/index.html) 
   (analysis presented in [Figure 4](https://www.biorxiv.org/content/10.1101/2020.12.22.423981v2.full))
