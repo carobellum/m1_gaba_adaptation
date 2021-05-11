@@ -7,13 +7,13 @@ Caroline Nettekoven, 2021, ✉️ nettekoven-enquiries@web.de
 ## Requirements ⚙️
 * R packages ppcor, Hmisc, tidyr, dplyr, irr, foreign, tidyverse available on the [Comprehensive R Archive Network](https://cran.r-project.org) 
   
-  For analysis presented in [Figure 2](https://www.biorxiv.org/content/10.1101/2020.12.22.423981v2.full) and [Figure 3](https://www.biorxiv.org/content/10.1101/2020.12.22.423981v2.full)
+  For analysis presented in [Figure 2](https://www.biorxiv.org/content/biorxiv/early/2021/03/15/2020.12.22.423981/F2.large.jpg) and [Figure 3](https://www.biorxiv.org/content/biorxiv/early/2021/03/15/2020.12.22.423981/F3.large.jpg)
 * Re-calculating relationships with robust correlations requires Matlab and the [Robust Correlation Toolbox](https://sourceforge.net/projects/robustcorrtool/files/) [[1]](#1) 
   
-  For analysis presented in [Figure 3](https://www.biorxiv.org/content/10.1101/2020.12.22.423981v2.full)
+  For analysis presented in [Figure 3](https://www.biorxiv.org/content/biorxiv/early/2021/03/15/2020.12.22.423981/F3.large.jpg)
 * Mediation Analysis requires SPSS version 27.0 and the SPSS modelling tool [PROCESS](https://www.processmacro.org/index.html)
   
-  For analysis presented in [Figure 4](https://www.biorxiv.org/content/10.1101/2020.12.22.423981v2.full)
+  For analysis presented in [Figure 4](https://www.biorxiv.org/content/biorxiv/early/2021/03/15/2020.12.22.423981/F4.large.jpg)
 
 <a id="1">[1]</a> 
 Pernet, C. R., Wilcox, R. & Rousselet, G. A. Robust correlation analyses: False positive and power validation using a new open source matlab toolbox. Front. Psychol. 3, 1–18 (2013).
