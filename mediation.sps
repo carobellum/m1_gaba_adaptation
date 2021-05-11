@@ -5614,7 +5614,7 @@ SET DECIMAL DOT.
 
 GET DATA  /TYPE=TXT
   /FILE=
-    "/Users/CN/Documents/Projects/Joystick_M1_MRS/Analysis/m1_gaba_adaptatio/data_rotation.txt"
+    "/Users/CN/Documents/Projects/Joystick_M1_MRS/Analysis/m1_gaba_adaptation/data_rotation.txt"
   /ENCODING='UTF8'
   /DELCASE=LINE
   /DELIMITERS="\t"
